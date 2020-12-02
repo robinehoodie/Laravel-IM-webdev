@@ -1,0 +1,292 @@
+*{
+    font-family: 'Scope One', serif;
+}
+body, html{
+    height: 100%;
+    margin: 0;
+    color: white;
+}
+body{
+    background-image: url(
+https://i.pinimg.com/originals/51/95/eb/5195ebb8c5f9772deda82aa2937134d3.jpg
+    );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+#container{
+    position: static;
+    background-color: rgba(0, 0, 0, .4);
+    height: 100%;
+    width: 100%;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+
+div.pullUp a:before {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: "";
+    background: #fff;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullUp a:hover:before {
+    height: 100%;
+}
+
+div.container1 {
+    font-family: Raleway;
+    position: absolute;
+    width: 500px;
+    margin-top: 1.5%;
+    margin-left: 18%;
+    text-align: center;
+}
+
+
+div.container1 a {
+    color: #fff;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+div.container2 {
+    font-family: Raleway;
+    width: 500px;
+    position: absolute;
+    margin-top: 1.5%;
+    margin-left: 49%;
+    text-align: center;
+}
+div.container2 a {
+    color: #fff;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 20px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(128,128,128,0.4); 
+  -webkit-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0,0,0,0.4); 
+}
+
+#back{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
+
+/*drop down*/
+
+#imageg1{
+    position:relative; 
+    margin-top: 5%;
+    width:90%;
+    height:90%;
+    border-radius: 50%;
+}
+
+#outside {
+
+    border-radius: 5%;
+    position: absolute;
+    background-color:rgba(255,255,255,0.6);
+    width: 20%;
+    height: 75%;
+    top:5%;
+    left: 77%;
+    z-index: 10;
+    display:none;
+}
+#circle {
+    border-radius: 50%;
+    position: absolute;
+    background-color:lightgray;
+    width: 45%;
+    height: 25%;
+    margin-top:5%;
+    margin-left: 26%;
+    z-index:5;
+}
+
+#inside {
+    border-radius: 5%;
+    border-style:solid;
+    border-color:lightgrey;
+    position: absolute;
+    background-color:white;
+    width: 250px;
+    height: 300px;
+    top: 12%;
+    left: 8.5%;
+}
+
+
+
+#formprof{
+    top:70%;    
+    position:absolute;
+    width:100%;
+
+}
+
+#submitprof{
+    font-family: 'Scope One';
+    width: 100%;
+    background-color: rgba(0,0,0, .3);
+    color: white;
+    padding: 10px 116.7px;
+    margin-left:0%;
+    margin-top:0.4%;
+    cursor: pointer;
+}
+
+#submitprof:hover{
+   
+    background-color: rgba(0,0,0, .8);
+  
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+
+.bar1{
+    margin-top:2%;
+}
+.bar2{
+    margin-top:2.65%;
+}
+.bar3{
+    margin-top:3.3%;
+}
+#menubar{
+    position:absolute;
+    margin-top:1%;
+    margin-left:95%;
+    height:5%;
+    width:2.5%;
+    cursor:pointer;
+}
+
+#edited{
+
+    width:50%;
+    margin-left:25%;
+    margin-top:10%;
+    height:50%;
+}
+
+#submitbutton{
+    font-family: 'Scope One';
+    width: 100%;
+    background-color: rgba(0,0,0, .3);
+    color: white;
+    padding: 10px ;
+    margin-left:0%;
+    margin-top:-10%;
+    cursor: pointer;
+    border:none;
+    font-size:15px;
+    margin-bottom:1%
+    
+}
+
+#submitbutton:hover{
+   
+   background-color: rgba(0,0,0, .8);
+ 
+}
+
+  .column {
+    float: left;
+    padding: 10px;
+    height: 93.6%; 
+  
+  }
+  
+  .left{
+    width:30%;
+  }
+  
+  .middle {
+    width: 30%;
+  }
+  
+  .right{
+    width: 30%;
+  }
+  
+  .row:after {
+      position:relative;
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  .button {
+    font-family: 'Scope One';
+    background-color: #006666;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+  }
+  
+  
+  .button4 {
+      border-radius: 12px;
+  }
+  
+  .button5 {
+      border-radius: 12px;
+  
+  }  

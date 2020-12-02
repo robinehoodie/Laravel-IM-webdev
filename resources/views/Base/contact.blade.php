@@ -1,21 +1,15 @@
 @extends('Base/layout')
 
 @section('body')
-        <div id="main" class="fade-in1">
-            <center>
-            <p style="font-size: 24px; line-height:0px; margin-bottom: 0px;">Tony's Lumber and Construction Supply </p>
-            <p style="font-size: 96px; line-height:100px; margin-top: 30px;margin-bottom: 0px;">TIMBER TRACK</p>
-            <p style="font-size: 18px; line-height:25px; margin-top: 10px;margin-bottom: 0px;">An inventory management system that allows a company to  manage <br>
-            supplies and keeps track  of the finance and progress of a work</p>
-            </center>
-        </div>
-        <div class="vl fade-in"></div>
-        
-        <a onclick="HideShow()" class="cta fade-out ">
-                        <span>GET STARTED</span>
-                        <svg width="13px" height="10px" viewBox="0 0 13 10">
-                          <path d="M1,5 L11,5"></path>
-                          <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                      </a>
+    <div id="contact" class="fade-in1">
+                    <p style="font-size: 100px; color:black; margin-top: 4%; margin-bottom: 0%;">Get in touch</p>
+                    <p style="font-size: 24px; color:white; margin-top: 0%; margin-bottom: 0%;">we are happy to try and provide you answers for your concerns!</p>
+
+                    <p style="font-size: 20px; color:#683620; margin-top: 10%; margin-bottom: 0%;">EMAIL</p>
+                    <p style="font-size: 16px; color:black; margin-top: 0%; margin-bottom: 0%;">robinecole@gmail.com<br>darcybalaga@gmail.com<br>billylu@gmail.com<br>jian.perol@gmail.com</p>
+                    <hr style="width:10%;margin-left:45%;background-color:rgba(0, 0, 0,.2);">
+
+                    <p style="font-size: 20px; color:#683620; margin-top: 0%; margin-bottom: 0%;">PHONE</p>
+                    <p style="font-size: 16px; color:black; margin-top: 0%; margin-bottom: 0%;">09123456789<br>09234567890<br>09345678901<br>09456789012</p>
+                </div>
 @endsection
