@@ -80,7 +80,8 @@
             </center>
         </div>
         <script>
- function HideShow() {
+        @yield('script')
+    function HideShow() {
             var x = document.getElementById("outside");
             if (x.style.display === "none") {
                 x.style.display = "block";

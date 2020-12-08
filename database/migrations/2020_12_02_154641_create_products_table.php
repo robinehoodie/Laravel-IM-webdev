@@ -22,7 +22,7 @@ class CreateProductsTable extends Migration
             $table->integer('customer_transaction');
             $table->enum('progress', ['FINISHED', 'ONGOING', 'CANCELED']);
             $table->integer('quantity');
-            $table->timestamps('date_added');
+            $table->timestamps();
         });
     }
 
