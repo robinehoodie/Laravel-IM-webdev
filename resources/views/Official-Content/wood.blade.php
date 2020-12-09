@@ -1,7 +1,7 @@
 @extends('Official-Content/Stock-layout')
 
 @section('new-css')
-    <link href="{{asset('official-css/wood.css')}}" rel="stylesheet">
+    <link href="{{asset('official-css/stock/wood.css')}}" rel="stylesheet">
 @endsection
 
 

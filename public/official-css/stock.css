@@ -158,7 +158,7 @@ button.fancy {
   transition: all 0.3s ease-in-out;
   user-select: none;
   width: 8.8125rem;
-  margin-left: 75%;
+  margin-left: 78%;
   margin-top: 3%;
 }
 button.fancy::before {
@@ -491,7 +491,43 @@ transition: background-color 0.2s;
   0% {opacity:0;}
   100% {opacity:1;}
   }
-
+  .fade-in2 {
+    animation: fadin ease 3s;
+    -webkit-animation: fadin ease 3s;
+    -moz-animation: fadin ease 3s;
+    -o-animation: fadin ease 3s;
+    -ms-animation: fadin ease 3s;
+    }
+    @keyframes fadin {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    }
+  
+    @-moz-keyframes fadin {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+  
+    @-webkit-keyframes fadin {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+  
+    @-o-keyframes fadin {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+  
+    @-ms-keyframes fadin {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
   .moveout {
     animation: move ease 3s;
     -webkit-animation: move ease 3s;

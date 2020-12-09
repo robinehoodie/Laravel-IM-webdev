@@ -7,11 +7,11 @@
 
 
 @section('body')
-        <form  method="POST">
+        <form  method="POST" class="movein">
             <input class="search__input" type="text" placeholder="Search">
             <input type="submit" name="go_search" style="position:absolute; display:none">
             </form>
-            <div id="container3"> 
+            <div id="container3" class="moveout"> 
                 @yield('content')
                 
             </div> 
@@ -22,7 +22,7 @@
             <button class="moveout" onclick="HideShowHistory()" id="button" style="left:25%; top:29.5%;"> Log-History </button>
             -->
 
-            <div id="categories">
+            <div id="categories" class="fade-in1">
                 <div id="selectedCategory"> </div>
                 <a  class="hover-shadow hover-color" href="{{ url('/Stock') }}"> <span>V</span><span>i</span><span>e</span><span>w</span> <span>A</span><span>l</span><span>l</span> </a>
                 <a class="hover-shadow hover-color" href="{{ url('/Stock/wood') }}" > <span>W</span><span>o</span><span>o</span><span>d</span> </a>
@@ -33,7 +33,7 @@
 
             </div>
 
-            <button class="fancy">
+            <button class="fancy fade-in2">
                 <span class="top-key"></span>
                 <a onclick="HideShowAdd()" class="">Create</a>
                 <span class="bottom-key-1"></span>

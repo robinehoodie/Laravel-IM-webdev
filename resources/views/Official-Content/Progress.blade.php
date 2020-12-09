@@ -1,26 +1,32 @@
-@extends('Content/layout')
+@extends('Official-Content/layout')
 
 @section('css')
-<link href="{{asset('css/progress.css')}}" rel="stylesheet">
+<link href="{{asset('official-css/progress.css')}}" rel="stylesheet">
 @endsection
 
 @section('body')
-</center>
-                <div id="progress" class="fade-in1">
-                    <p style="font-size: 84px; line-height:100px; margin-top: 30px;margin-bottom: 0px;">PROGRESS</p>
-                    <p style="font-size: 18px; line-height:25px; margin-top: 10px;margin-bottom: 0px;">Track how your deliveries are going. From start <br>
-                    to finish, and how they're doing fulltime.</p>
-                  </div>
- <center>
-                 
-                      <button id= "button" class="fade-in1" onclick="HideShowTable()">CHECK </button>
-                      <button id="button1"  onclick="HideShowSort()" style="opacity:0">SORT </button>
-
-                      <div id="container3" style="opacity: 0;"> 
-
-                      </div>
-
-                      <div id= "back" style="display:none">
+<form  method="POST" class="movein">
+            <input class="search__input" type="text" placeholder="Search">
+            <input type="submit" name="go_search" style="position:absolute; display:none">
+            </form>
+            <div id="container3" class="moveout"> 
+            </div> 
+            <button class="fancy fade-in2">
+                <span class="top-key"></span>
+                <a onclick="HideShowAdd()" class="">Create</a>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+                </button>
+                <button class="fancy fade-in1" style="margin-left:-79%; position: absolute;">
+                <span class="top-key"></span>
+                <a onclick="HideShowSort()" class="">Sort</a>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+                </button>
+                      <div style="width:20%; height:10% ;  position:absolute; margin-left:38%; margin-top:-5%">
+                            <center> <h1> DATE <h1> </center>
+                    </div>
+                      <div id= "elf" style="display:none">
                         <div class="login">
                         <span class='close'>&times;</span>
                         <h1> Add Progress</h1>
@@ -48,8 +54,8 @@
                             </form>
                         </div>
                     </div> 
-
-                    <div id= "back1" style="display:">
+                <center>
+                    <div id= "detras">
                     <div class="sort">
                     <span class='exit'>&times;</span>
                     <h1 id="left"> Sorting</h1>
@@ -102,10 +108,11 @@
                     </form>
                 </div>
            </div> 
+</center>
 @endsection
 
 @section('script')
-    function HideShowInserting() {
+function HideShowInserting() {
                 var x = document.getElementById("forInsert2");
                 var y = document.getElementById("forInsert");
                 if (x.style.display === "none" ) {
@@ -116,13 +123,8 @@
                     y.style.display = "block";
                 }
             }
-function HideShowTable() {
-                document.getElementById("container3").style.opacity="1";
-                document.getElementById("button1").style.opacity="1";
-            
-            }
             function HideShowAdd() {
-                var x = document.getElementById("back");
+                var x = document.getElementById("elf");
                 if (x.style.display === "none" ) {
                     x.style.display = "block";
                 } else {
@@ -130,9 +132,9 @@ function HideShowTable() {
                 }
             }
 
-            var add = document.getElementById('back');
-            var span = document.getElementsByClassName("close")[0];
-            span.onclick = function() {
+            var add = document.getElementById('elf');
+            var crate = document.getElementsByClassName("close")[0];
+            crate.onclick = function() {
                 add.style.display = "none";
             }
             window.onclick = function(event) {
@@ -142,7 +144,7 @@ function HideShowTable() {
             }
 
             function HideShowSort() {
-                var x = document.getElementById("back1");
+                var x = document.getElementById("detras");
                 if (x.style.display === "none" ) {
                     x.style.display = "block";
                 } else {
@@ -150,9 +152,9 @@ function HideShowTable() {
                 }
             }
 
-            var sort = document.getElementById('back1');
-            var span = document.getElementsByClassName("exit")[0];
-            span.onclick = function() {
+            var sort = document.getElementById('detras');
+            var asd = document.getElementsByClassName("exit")[0];
+            asd.onclick = function() {
                 sort.style.display = "none";
             }
             window.onclick = function(event) {

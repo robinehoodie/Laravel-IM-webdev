@@ -37,11 +37,15 @@ Route::get('/Stock/others', function () {
 });
 
 Route::get('/Progress', function () {
-    return view('Content/Progress');
+    return view('Official-Content/Progress');
 });
 
 Route::get('/Dashboard', function () {
-    return view('Content/Dashboard');
+    return view('Official-Content/Dashboard');
+});
+
+Route::get('/Resupply', function () {
+    return view('Official-Content/Resupply');
 });
 
 
