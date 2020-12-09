@@ -18,12 +18,32 @@ Route::get('/', function () {
 });
 
 Route::get('/Stock', function () {
-    return view('Content/Stock');
+    return view('Official-Content/Stock');
+});
+Route::get('/Stock/wood', function () {
+    return view('Official-Content/wood');
+});
+Route::get('/Stock/plastic', function () {
+    return view('Official-Content/plastic');
+});
+Route::get('/Stock/concrete', function () {
+    return view('Official-Content/concrete');
+});
+Route::get('/Stock/metal', function () {
+    return view('Official-Content/metal');
+});
+Route::get('/Stock/others', function () {
+    return view('Official-Content/others');
 });
 
 Route::get('/Progress', function () {
     return view('Content/Progress');
 });
+
+Route::get('/Dashboard', function () {
+    return view('Content/Dashboard');
+});
+
 
 Route::get('/About', function () {
     return view('Base/about');
