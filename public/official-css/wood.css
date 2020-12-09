@@ -2,7 +2,7 @@
   position: absolute;
   border-radius: 25px;
   color:white;
-  background-color: black;
+  border: 2px solid black;
   text-align: center;
   height: 100%;
   width: 18%;
