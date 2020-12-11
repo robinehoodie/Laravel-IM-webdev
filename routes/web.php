@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\StockController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\Auth\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,26 +19,24 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('Base/index');
-});
+})->name('index');
 
-Route::get('/Stock', function () {
-    return view('Official-Content/Stock');
-});
-Route::get('/Stock/wood', function () {
-    return view('Official-Content/wood');
-});
-Route::get('/Stock/plastic', function () {
-    return view('Official-Content/plastic');
-});
-Route::get('/Stock/concrete', function () {
-    return view('Official-Content/concrete');
-});
-Route::get('/Stock/metal', function () {
-    return view('Official-Content/metal');
-});
-Route::get('/Stock/others', function () {
-    return view('Official-Content/others');
-});
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
+
+Route::get('/register', [RegisterController::class, 'index'])->name('register');
+Route::post('/register', [RegisterController::class, 'store']);
+
+Route::get('/logout', [LogoutController::class, 'index'])->name('logout');
+
+Route::get('/Stock', [StockController::class, 'index'])->name('Stock');
+Route::get('/Stock/wood', [StockController::class, 'wood'])->name('Stock/wood');
+Route::get('/Stock/plastic', [StockController::class, 'plastic'])->name('Stock/plastic');
+Route::get('/Stock/concrete', [StockController::class, 'concrete'])->name('Stock/concrete');
+Route::get('/Stock/metal', [StockController::class, 'metal'])->name('Stock/metal');
+Route::get('/Stock/others', [StockController::class, 'others'])->name('Stock/others');
+
+
 
 Route::get('/Progress', function () {
     return view('Official-Content/Progress');

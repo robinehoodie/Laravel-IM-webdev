@@ -1,0 +1,23 @@
+/* CSS CLASSES */
+.margin-l-5 {
+    margin-left: 5px;
+}
+.border-red {
+    border-color: red;
+}
+
+.float-r {
+    float: right;
+}
+
+.text-align-l {
+    text-align: left;
+}
+
+.color-red {
+    color: red;
+}
+
+.block {
+    display: block;
+}

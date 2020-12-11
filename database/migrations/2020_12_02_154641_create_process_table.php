@@ -33,6 +33,6 @@ class CreateProcessTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('products');
+        Schema::dropIfExists('process');
     }
 }
