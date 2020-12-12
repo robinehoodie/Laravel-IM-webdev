@@ -13,15 +13,13 @@
 <div class="vl fade-in"></div>
 
 <a onclick="HideShow()" class="cta fade-out ">
-    <span>TEST STARTED</span>
+    <span>GET STARTED</span>
     <svg width="13px" height="10px" viewBox="0 0 13 10">
         <path d="M1,5 L11,5"></path>
         <polyline points="8 1 12 5 8 9"></polyline>
     </svg>
 </a>
-@if($login === true)
-<h1> OMG </h1>
-@endif
+
 
 <div id='back' @if($login===true)style="display: block" @endif>
     <div class='login'>
@@ -29,9 +27,6 @@
         <h1>Login</h1>
         <form action='{{ route('login') }}' method='POST'>
             @csrf
-            @if (session('status'))
-            <div class="color-red">{{ session('status') }}</div>
-            @endif
             <label for='username'>
                 <i class='fas fa-user'></i>
             </label>
@@ -39,7 +34,12 @@
             <label for='password'>
                 <i class='fas fa-lock'></i>
             </label>
+
             <input type='password' name='password' placeholder='Password' required>
+
+            @if (session('status'))
+            <div style="color:red">{{ session('status') }}</div>
+            @endif
             <input type='submit' name='Login' value='Login'>
         </form>
     </div>

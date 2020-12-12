@@ -4,103 +4,40 @@
 body, html{
     height: 100%;
     margin: 0;
-    color: white;
+    color: black;
 }
 body{
-    background-image: url(
-https://i.pinimg.com/originals/51/95/eb/5195ebb8c5f9772deda82aa2937134d3.jpg
-    );
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
+    background-color: #DDDCDC;
 }
-#container{
-    position: static;
-    background-color: rgba(0, 0, 0, .4);
-    height: 100%;
-    width: 100%;
+/*header*/
+#header{
+    position: fixed;
+    background-color: white;
+    height: 9%;
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 0%;
+    padding-top: 0%;
+    z-index: 10;
+}
+
+#companyName{
+    position: fixed;
+    background-color: rgba(0, 0, 0, .8);
+    height: 9%;
+    width: 20%;
     margin-top: 0%;
     padding-top: 0%;
 }
 
 
-div.pullUp a:before {
+#container{
     position: absolute;
-    width: 100%;
-    height: 2px;
-    left: 0px;
-    bottom: 0px;
-    content: "";
-    background: #fff;
-    opacity: 0.3;
-    transition: all 0.3s;
-}
-
-div.pullUp a:hover:before {
+    margin-left: 20%;
+    margin-top: 4.49%;
+    width: 79.5%;
     height: 100%;
 }
-
-div.container1 {
-    font-family: Raleway;
-    position: absolute;
-    width: 500px;
-    margin-top: 1.5%;
-    margin-left: 18%;
-    text-align: center;
-}
-
-
-div.container1 a {
-    color: #fff;
-    text-decoration: none;
-    font: 20px Raleway;
-    margin: 0px 10px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-}
-
-div.container2 {
-    font-family: Raleway;
-    width: 500px;
-    position: absolute;
-    margin-top: 1.5%;
-    margin-left: 49%;
-    text-align: center;
-}
-div.container2 a {
-    color: #fff;
-    text-decoration: none;
-    font: 20px Raleway;
-    margin: 0px 20px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-}
-
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: rgba(128,128,128,0.4); 
-  -webkit-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-}
-::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(0,0,0,0.4); 
-}
-
 #back{
     position: fixed;
     height: 100%;
@@ -113,6 +50,27 @@ div.container2 a {
     z-index: 10;
   }
 
+  /*menu*/
+  #menu{
+    position: fixed;
+    background-color: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 20%;
+    margin-top: 4.45%;
+    padding-top: 0%;
+}
+
+  #stock,#progress, #dashboard, #resupply{
+    height:8%;
+    width:99%;
+    margin-top:10%;
+  }
+
+  #stock:hover , #progress:hover  , #dashboard:hover , #resupply:hover  {
+    background-color:  rgba(255, 255, 255, .1);
+      border-left: 3px solid white;
+  }
+
 /*drop down*/
 
 #imageg1{
@@ -122,43 +80,6 @@ div.container2 a {
     height:90%;
     border-radius: 50%;
 }
-
-#outside {
-
-    border-radius: 5%;
-    position: absolute;
-    background-color:rgba(255,255,255,0.6);
-    width: 20%;
-    height: 75%;
-    top:5%;
-    left: 77%;
-    z-index: 10;
-    display:none;
-}
-#circle {
-    border-radius: 50%;
-    position: absolute;
-    background-color:lightgray;
-    width: 45%;
-    height: 25%;
-    margin-top:5%;
-    margin-left: 26%;
-    z-index:5;
-}
-
-#inside {
-    border-radius: 5%;
-    border-style:solid;
-    border-color:lightgrey;
-    position: absolute;
-    background-color:white;
-    width: 250px;
-    height: 300px;
-    top: 12%;
-    left: 8.5%;
-}
-
-
 
 #formprof{
     top:70%;    
@@ -182,33 +103,6 @@ div.container2 a {
    
     background-color: rgba(0,0,0, .8);
   
-}
-
-.bar1, .bar2, .bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: white;
-  margin: 6px 0;
-  transition: 0.4s;
-}
-
-
-.bar1{
-    margin-top:2%;
-}
-.bar2{
-    margin-top:2.65%;
-}
-.bar3{
-    margin-top:3.3%;
-}
-#menubar{
-    position:absolute;
-    margin-top:1%;
-    margin-left:95%;
-    height:5%;
-    width:2.5%;
-    cursor:pointer;
 }
 
 #edited{

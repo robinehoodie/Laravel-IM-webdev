@@ -1,7 +1,7 @@
 @extends('Official-Content/layout')
 
 @section('css')
-    <link href="{{asset('official-css/stock.css')}}" rel="stylesheet">
+    <link href="{{asset('css/stock.css')}}" rel="stylesheet">
     @yield('new-css')
 @endsection
 
@@ -11,14 +11,14 @@
             <input class="search__input" type="text" placeholder="Search">
             <input type="submit" name="go_search" style="position:absolute; display:none">
             </form>
-            <div id="container3" class="moveout"> 
+            <div id="container3" class="moveout">
                 @yield('content')
-                
-            </div> 
 
-<!-- 
+            </div>
+
+<!--
             <button class="moveout" onclick="HideShowAdd()" id="button" style="left:16%; top:29.5%;"> Add </button>
-            
+
             <button class="moveout" onclick="HideShowHistory()" id="button" style="left:25%; top:29.5%;"> Log-History </button>
             -->
 
@@ -47,7 +47,7 @@
                                 <input type='text' name='products' placeholder='Product Name' required>
                                 <label for='products'>
                                     <i class='fas fa-box-open'></i>
-                                </label> 
+                                </label>
 
                                 <input type='number' name='available' placeholder='Available Pieces' required>
                                 <label for='available'>
@@ -59,7 +59,7 @@
                                     <i class='fas fa-dollar-sign'></i>
                                 </label>
 
-                                
+
                                 <select name='category' placeholder='Category' onchange="reload()" style="margin-top:0%; margin-left:-40px" required>
                                 <option value='' disabled selected hidden>Category</option>
                                 <option value='wood'>Wood</option>
@@ -67,7 +67,7 @@
                                 <option value='metal'>Metal</option>
                                 <option value='concrete'>Concrete</option>
                                 <option value='paint'>Paint</option>
-                            </select> 
+                            </select>
                             <select name='category' placeholder='Category' onchange="reload()"  style="margin-top:0%; margin-left: 20px" required>
                                 <option value='' disabled selected hidden>Subcategory</option>
                                 <option value='wood'>Wood</option>
@@ -75,7 +75,7 @@
                                 <option value='metal'>Metal</option>
                                 <option value='concrete'>Concrete</option>
                                 <option value='paint'>Paint</option>
-                            </select> 
+                            </select>
                             <select name='category' placeholder='Category' onchange="reload()" id="select1" style="margin-top:0%; margin-left:  20px" required>
                                 <option value='' disabled selected hidden>Product</option>
                                 <option value='wood'>Wood</option>
@@ -83,10 +83,10 @@
                                 <option value='metal'>Metal</option>
                                 <option value='concrete'>Concrete</option>
                                 <option value='paint'>Paint</option>
-                            </select>    
+                            </select>
                                 <label for='category'>
                                     <i class='fas fa-table'></i>
-                                </label>  
+                                </label>
                                 <input type='submit' name='insert' value='Add'>
                             </form>
                         </div>
@@ -94,12 +94,13 @@
 
             <div id='history'>
             <div class='log-history'>
-            <span class='exit'>&times;</span> <h1>HISTORY</h1> 
+            <span class='exit'>&times;</span> <h1>HISTORY</h1>
             </div>
-            
+
 @endsection
 
 @section('script')
+<script>
 function HideShowAdd() {
                 var x = document.getElementById("back");
                 if (x.style.display === "none") {
@@ -138,4 +139,5 @@ function HideShowAdd() {
                     modal1.style.display = "none";
                 }
             }
+            </script>
 @endsection
