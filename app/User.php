@@ -6,11 +6,12 @@ namespace App;
 
 
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\Auth;
 
 use Illuminate\Notifications\Notifiable;
+
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Foundation\Auth\User as Authenticatable;
 
 
 
@@ -73,4 +74,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
 
     ];
+
+    public function hasPermission($role)
+    {
+        return count(User::where('id', Auth::user()->id)->where('role', $role)->get());
+    }
 }
