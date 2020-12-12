@@ -35,4 +35,7 @@
                 <button type="submit">Login</button>
             </center>
         </form>
-        <center </center> </body> </html>
+    </center>
+</body>
+
+</html>

@@ -17,26 +17,31 @@ use App\Http\Controllers\Auth\RegisterController;
 |
 */
 
+Route::middleware(['auth'])->group(function () {
+    Route::get('/Stock', [StockController::class, 'index'])->name('Stock');
+    Route::get('/Stock/wood', [StockController::class, 'wood'])->name('Stock/wood');
+    Route::get('/Stock/plastic', [StockController::class, 'plastic'])->name('Stock/plastic');
+    Route::get('/Stock/concrete', [StockController::class, 'concrete'])->name('Stock/concrete');
+    Route::get('/Stock/metal', [StockController::class, 'metal'])->name('Stock/metal');
+    Route::get('/Stock/others', [StockController::class, 'others'])->name('Stock/others');
+});
+
+Route::get('/login', function () {
+    return view('Base/index-login', ['login' => true]);
+})->name('login');
+
 Route::get('/', function () {
     return view('Base/index');
 })->name('index');
 
-Route::get('/login', [LoginController::class, 'index'])->name('login');
+
+// Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 
 Route::get('/register', [RegisterController::class, 'index'])->name('register');
 Route::post('/register', [RegisterController::class, 'store']);
 
 Route::get('/logout', [LogoutController::class, 'index'])->name('logout');
-
-Route::get('/Stock', [StockController::class, 'index'])->name('Stock');
-Route::get('/Stock/wood', [StockController::class, 'wood'])->name('Stock/wood');
-Route::get('/Stock/plastic', [StockController::class, 'plastic'])->name('Stock/plastic');
-Route::get('/Stock/concrete', [StockController::class, 'concrete'])->name('Stock/concrete');
-Route::get('/Stock/metal', [StockController::class, 'metal'])->name('Stock/metal');
-Route::get('/Stock/others', [StockController::class, 'others'])->name('Stock/others');
-
-
 
 Route::get('/Progress', function () {
     return view('Official-Content/Progress');

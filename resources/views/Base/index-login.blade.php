@@ -13,14 +13,17 @@
 <div class="vl fade-in"></div>
 
 <a onclick="HideShow()" class="cta fade-out ">
-    <span>GET STARTED</span>
+    <span>TEST STARTED</span>
     <svg width="13px" height="10px" viewBox="0 0 13 10">
         <path d="M1,5 L11,5"></path>
         <polyline points="8 1 12 5 8 9"></polyline>
     </svg>
 </a>
+@if($login === true)
+<h1> OMG </h1>
+@endif
 
-<div id='back' @if($login ?? ''===true)style="display: block" @endif>
+<div id='back' @if($login===true)style="display: block" @endif>
     <div class='login'>
         <span class='close'>&times;</span>
         <h1>Login</h1>
