@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StockController;
+use App\Http\Controllers\ResupplyController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Auth\RegisterController;
@@ -24,6 +25,15 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/Stock/concrete', [StockController::class, 'concrete'])->name('Stock/concrete');
     Route::get('/Stock/metal', [StockController::class, 'metal'])->name('Stock/metal');
     Route::get('/Stock/others', [StockController::class, 'others'])->name('Stock/others');
+});
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/Resupply', [ResupplyController::class, 'index'])->name('Resupply');
+    Route::get('/Resupply/wood', [ResupplyController::class, 'wood'])->name('Resupply/wood');
+    Route::get('/Resupply/plastic', [ResupplyController::class, 'plastic'])->name('Resupply/plastic');
+    Route::get('/Resupply/concrete', [ResupplyController::class, 'concrete'])->name('Resupply/concrete');
+    Route::get('/Resupply/metal', [ResupplyController::class, 'metal'])->name('Resupply/metal');
+    Route::get('/Resupply/others', [ResupplyController::class, 'others'])->name('Resupply/others');
 });
 
 Route::get('/login', function () {
@@ -51,9 +61,6 @@ Route::get('/Dashboard', function () {
     return view('Official-Content/Dashboard');
 });
 
-Route::get('/Resupply', function () {
-    return view('Official-Content/Resupply');
-});
 
 
 Route::get('/About', function () {

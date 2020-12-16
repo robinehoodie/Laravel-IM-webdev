@@ -98,14 +98,7 @@
             <a href="{{ url('/Resupply') }}" style="font-size: 30px; color:white; margin-left:4%; text-decoration:none">
                 RESUPPLY </a>
         </div>
-        @auth
-        <div id="resupply">
-            <i class="fa fa-cubes" style="color:white; font-size: 30px; margin-top:5%; margin-left:5%;"></i>
-            <a href="{{ route('logout') }}" style="font-size: 30px; color:white; margin-left:4%; text-decoration:none">
-                {{ auth()->user()->name}} </a>
 
-        </div>
-        @endauth
 
     </div>
 

@@ -14,26 +14,26 @@ class StockController extends Controller
 
     public function wood()
     {
-        return view('Official-Content/wood');
+        return view('Official-Content/Stock/wood');
     }
 
     public function plastic()
     {
-        return view('Official-Content/plastic');
+        return view('Official-Content/Stock/plastic');
     }
 
     public function concrete()
     {
-        return view('Official-Content/concrete');
+        return view('Official-Content/Stock/concrete');
     }
 
     public function metal()
     {
-        return view('Official-Content/metal');
+        return view('Official-Content/Stock/metal');
     }
 
     public function others()
     {
-        return view('Official-Content/others');
+        return view('Official-Content/Stock/others');
     }
 }
