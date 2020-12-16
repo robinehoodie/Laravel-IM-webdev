@@ -11,16 +11,14 @@
             <input class="search__input" type="text" placeholder="Search">
             <input type="submit" name="go_search" style="position:absolute; display:none">
             </form>
+
             <div id="container3" class="moveout">
                 @yield('content')
 
             </div>
 
-<!--
-            <button class="moveout" onclick="HideShowAdd()" id="button" style="left:16%; top:29.5%;"> Add </button>
+            {{-- <button class="moveout" onclick="HideShowHistory()" id="button" style="left:25%; top:29.5%;"> Log-History </button> --}}
 
-            <button class="moveout" onclick="HideShowHistory()" id="button" style="left:25%; top:29.5%;"> Log-History </button>
-            -->
 
             <div id="categories" class="fade-in1">
                 <div id="selectedCategory"> </div>

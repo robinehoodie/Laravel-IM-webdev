@@ -65,6 +65,14 @@
             </div>
 
             </div>
+            <div  class="hover2" style=" width:17%; height:100%; float:right; border-left: 1px solid gray;">
+                <i class="fa fa-angle-down" style="margin-top:1.8%;margin-left:2%; position: absolute; font-size:35px;"> </i>
+                <p style="font-size:30px; margin-left:30%; margin-top:10%; cursor: pointer;">  REGISTER  </p>
+                <div class="viewregister" >
+                    <i class="fas fa-newspaper" style=" position: absolute; margin-left:-39%; margin-top:12%; font-size:20px;"></i>
+                    <h3> <a href="{{ url('/Registered') }}" style="position: absolute; margin-left:-24%; margin-top:5%; text-decoration:none;"> VIEW REGISTERED  </a> </h3>
+                </div>
+            </div>
         </div>
 
     <div id="companyName">

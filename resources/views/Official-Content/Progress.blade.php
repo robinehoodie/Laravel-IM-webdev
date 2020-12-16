@@ -9,8 +9,36 @@
             <input class="search__input" type="text" placeholder="Search">
             <input type="submit" name="go_search" style="position:absolute; display:none">
             </form>
+
             <div id="container3" class="moveout">
+                <table id="table-progress"><tr>
+                    <th style="width:15%">Last Name</th>
+                    <th style="width:15%">First Name</th>
+                    <th style="width:15%">Address</th>
+                    <th style="width:15%">Material</th>
+                    <th style="width:15%">Quantity</th>
+                    <th style="width:15%">Transaction</th>
+                    <th style="width:20%">Progress</th>
+                    </tr>
+                    <tr>
+                    <td><center>jumalon</center></td>
+                    <td><center>robine</center></td>
+                    <td><center>adrresdsds</center></td>
+                    <td><center>product</center></td>
+                    <td><center>23</center></td>
+                    <td><center>PHP price*quatitiy</center></td>';
+                    <td>
+                        <select style="">
+                            <option disabled selected hidden>ONGOING</option>
+                            <option>COMPLETED</option>
+                            <option>DECLINED</option>
+                        </select>
+                    </td>
+                    </tr>
+                </table>
             </div>
+
+
             <button class="fancy fade-in2">
                 <span class="top-key"></span>
                 <a onclick="HideShowAdd()" class="">Create</a>

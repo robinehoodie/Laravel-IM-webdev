@@ -158,11 +158,10 @@ button.fancy:hover .bottom-key-2 {
 
 
 table {
-margin-top: 3%;
-margin-left:5%;
-width: 90%;
+width: 100%;
 border-collapse: collapse;
 border: 1px solid black;
+font-size: 20px;
 
 }
 ::-webkit-scrollbar {

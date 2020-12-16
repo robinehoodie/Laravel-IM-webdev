@@ -6,12 +6,11 @@
     position: absolute;
     background-color: rgba(255, 255, 255, .34);
     color: black;
-    height: 2000px;
+    height: auto;
     width: 90%;
     margin-top: 10%;
     margin-left: 5%;
     text-align: center;
-    overflow-y:auto
 }
 /*search*/
 .search__input {
@@ -242,11 +241,11 @@ button.fancy:hover .bottom-key-2 {
 
 /*table*/
 table {
-margin-top: 3%;
-margin-left:5%;
-width: 90%;
+
+width: 100%;
 border-collapse: collapse;
 border: 1px solid black;
+font-size: 24px;
 
 }
 ::-webkit-scrollbar {
@@ -350,6 +349,59 @@ color: #aaaaaa;
 float: right;
 font-size: 28px;
 font-weight: bold;
+}
+
+.updating {
+
+    display: inline-block;
+    border: none;
+    padding: 0;
+    width: 10.5ch;
+    background: repeating-linear-gradient(90deg, dimgrey 0, dimgrey 1ch, transparent 0, transparent 1.5ch) 0 100%/ 6ch 2px no-repeat;
+    font: 2ch droid sans mono, consolas, monospace;
+    letter-spacing: 0.5ch;
+  }
+
+  .updating:focus {
+    outline: none;
+  }
+
+
+#submit-icon{
+
+    width: 35px;
+    height: 35px;
+    border:1;
+    border-radius: 50%;
+    background:none;
+    position:absolute;
+    cursor:pointer;
+    margin-left:-24px;
+}
+
+
+#submit-icon2{
+
+   width: 35px;
+   height: 35px;
+   border:1;
+   border-radius: 50%;
+   background:none;
+   cursor:pointer;
+   position:absolute;
+   margin-left:-29px;
+}
+
+#submit-icon3{
+
+    width: 35px;
+    height: 35px;
+   border:1;
+   border-radius: 50%;
+   background:none;
+   cursor:pointer;
+   position:absolute;
+   margin-left:-25.5px;
 }
 
 .close:hover,

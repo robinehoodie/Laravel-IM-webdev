@@ -80,7 +80,65 @@ body{
     height:250px;
     background-color: rgba(255,255,255,0.9);
 }
+.viewregister{
+    width:17%;
+    position: absolute;
+    height: 83px;
+    background-color: rgba(255,255,255,0.8);
+    text-align:center;
+    display:none;
+    cursor: pointer;
+    margin-top: -.86%;
+}
+.viewregister a{
+    color:black;
+}
 
+.viewregister:hover {
+    background-color:  rgba(0,0,0,0.8);
+    color:white;
+}
+
+.viewregister:hover a{
+    color:white;
+}
+
+.hover2:hover .viewregister {
+    display:block;
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    -webkit-animation: menu2 ease-in-out forwards;
+            animation: menu2 ease-in-out forwards;
+    -webkit-animation-duration: 175ms;
+            animation-duration: 175ms;
+    -webkit-animation-delay: 0ms;
+            animation-delay: 0ms;
+    }
+    @-webkit-keyframes menu2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%) scale(0.3);
+                transform: translateY(-100%) scale(0.3);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0) scale(1);
+                transform: translateY(0) scale(1);
+    }
+    }
+    @keyframes menu2 {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%) scale(0.3);
+                transform: translateY(-100%) scale(0.3);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0) scale(1);
+                transform: translateY(0) scale(1);
+    }
+    }
 .hover:hover .view {
     display:block;
     opacity: 0;

@@ -30,7 +30,9 @@
     <div class="plus" name="plus">
         <center><label for="plus"> <i class="fa fa-plus" style="font-size:30px; margin-top:20%;"></i></label></center>
         <div class="slider">
+            <form>
 
+            </form>
         </div>
     </div>
 
